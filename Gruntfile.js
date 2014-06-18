@@ -1,8 +1,9 @@
 module.exports = function (grunt) {
-  // load all grunt tasks
+  // Loads all grunt tasks
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    // Grunt watch task setup
     watch: {
       less: {
         files: [
@@ -13,6 +14,7 @@ module.exports = function (grunt) {
         ]
       }
     },
+    // Grunt LESS task setup
     less: {
       src: {
         files: {
@@ -20,6 +22,7 @@ module.exports = function (grunt) {
         }
       }
     },
+    // Grunt web server
     connect: {
       server: {
         options: {
@@ -30,6 +33,7 @@ module.exports = function (grunt) {
     }
   });
 
+  // Behavior of the 'grunt' command when run without parameters
   grunt.registerTask('default', [
     'less',
     'connect:server',
