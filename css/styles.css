@@ -5802,6 +5802,14 @@ body {
     width: 250px;
   }
 }
+.slogan p {
+  color: #4b0900;
+  text-align: center;
+  font-weight: bold;
+}
+.download {
+  text-align: center;
+}
 .btn-primary {
   background-color: #bed63c;
   border: none;
@@ -5813,8 +5821,16 @@ body {
 .marketing-box {
   padding: 10px;
   border-radius: 5px;
+  background-color: #bed63c;
   min-height: 300px;
-  background-color: #c7c190;
+}
+@media (max-width: 991px) {
+  .marketing-box {
+    margin-bottom: 20px;
+  }
+}
+.marketing-box h2 {
+  text-align: center;
 }
 footer {
   text-align: center;
