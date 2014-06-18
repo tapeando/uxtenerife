@@ -5777,26 +5777,45 @@ button.close {
   background-color: transparent;
 }
 body {
-  background-color: #33b5e5;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000;
+}
+#logo {
+  margin: 15px 0;
+}
+#logo img {
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 1200px) {
+  #logo img {
+    width: 450px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #logo img {
+    width: 350px;
+  }
+}
+@media (max-width: 991px) {
+  #logo img {
+    width: 250px;
+  }
+}
+.btn-primary {
+  background-color: #bed63c;
+  border: none;
+  margin: 0 auto;
+}
+.btn-primary:hover {
+  background-color: #869800;
 }
 .marketing-box {
   padding: 10px;
   border-radius: 5px;
+  min-height: 300px;
+  background-color: #c7c190;
 }
-@media (min-width: 1200px) {
-  .marketing-box {
-    background-color: #ffbb33;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .marketing-box {
-    background-color: #0099cc;
-  }
-}
-@media (max-width: 991px) {
-  .marketing-box {
-    margin-bottom: 20px;
-    background-color: #99cc00;
-  }
+footer {
+  text-align: center;
 }

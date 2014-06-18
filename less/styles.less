@@ -5,6 +5,7 @@
 @dark-blue: #0099cc;
 @orange: #ffbb33;
 @green: #99cc00;
+@white: #FFF;
 
 
 .jumbotron {
@@ -13,24 +14,47 @@
 }
 
 body {
-  background-color: @blue;
-  color: #fff;
+  background-color: @white;
+  color: #000;
 }
 
+#logo {
+  margin: 15px 0;
+}
+
+#logo img {
+  margin: 0 auto;
+  display: block;
+
+  // Media queries for different behaviors of this element on different resolutions.
+  @media (min-width: @screen-lg-min) {
+    width: 450px;
+  }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    width: 350px; 
+  }
+  @media (max-width: @screen-sm-max) {
+    width: 250px;
+  } 
+}
+
+.btn-primary {
+  background-color: #bed63c;
+  border: none;
+  margin: 0 auto;
+}
+
+.btn-primary:hover {
+  background-color: #869800;
+}
 
 .marketing-box {
   padding: 10px;
   border-radius: 5px;
+  min-height: 300px;
+  background-color: #c7c190;
+}
 
-  // Media queries for different behaviors of this element on different resolutions.
-  @media (min-width: @screen-lg-min) {
-  	background-color: @orange;
-  }
-  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-  	background-color: @dark-blue;	
-  }
-  @media (max-width: @screen-sm-max) {
-  	margin-bottom: 20px;
-  	background-color: @green;
-  } 
+footer {
+  text-align: center;
 }
