@@ -14,12 +14,13 @@
 }
 
 body {
-  background-color: @white;
-  color: #000;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  color: #FFF;
 }
 
 #logo {
-  margin: 15px 0;
+  margin: 25px 0 0;
 }
 
 #logo img {
@@ -39,19 +40,23 @@ body {
 }
 
 .slogan p {
-  color: #4b0900;
+  color: #FFF;
   text-align: center;
-  font-weight: bold;
+  font-size: 25px;
+  line-height: 27px;
 }
 
 .download {
   text-align: center;
+  margin: 30px 0 0;
 }
 
 .btn-primary {
   background-color: #bed63c;
   border: none;
   margin: 0 auto;
+  color: #000;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -61,7 +66,7 @@ body {
 .marketing-box {
   padding: 10px;
   border-radius: 5px;
-  background-color: #bed63c;
+  background-color: rgba(199, 193, 144, 0.7);
   min-height: 300px;
 
   @media (max-width: @screen-sm-max) {
@@ -71,8 +76,69 @@ body {
 
 .marketing-box h2 {
   text-align: center;
+  color: #4B0908;
+  font-weight: bold;
+}
+
+.number {
+  border-radius: 30px;
+  border: 3px solid #4B0908;
+  width: 40px;
+  background-color: #4B0908;
+  height: 40px;
+  display: block;
+  float: left;
+  color: #FFF;  
+}
+
+.text {
+  line-height: 40px;  
+}
+
+
+
+p .glyphicon {
+  font-size: 130px;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.marketing-box p {
+  clear: both;
+  text-align: center;
+  color: #4B0908;
+}
+
+.title {
+  font-size: 23px !important;
+  line-height: 32px;
+  margin-left: 15px;
+  float: left;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #bed63c;
+}
+
+#layout {
+  width: 100%;
+  background: rgba(35,35,35,0.5);
+}
+
+html,
+body {
+  height: 100%;
 }
 
 footer {
   text-align: center;
+}
+
+@media (min-width: 720px) {
+    
+  .title {
+    font-size: 18px !important;
+  }
+
 }
