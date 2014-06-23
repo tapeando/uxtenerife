@@ -5806,18 +5806,27 @@ body {
   color: #4b0900;
   text-align: center;
   font-weight: bold;
+  margin-top: 100px;
 }
 .download {
   text-align: center;
 }
 .btn-primary {
-  background-color: #bed63c;
+  background-color: pink;
   border: none;
   margin: 0 auto;
 }
 .btn-primary:hover {
-  background-color: #869800;
+  background-color: #bed63c;
 }
+#btn-secondary {
+  color: pink;
+}
+
+#btn-secondary:hover {
+  color: #bed63c;
+}
+
 .marketing-box {
   padding: 10px;
   border-radius: 5px;
