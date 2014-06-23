@@ -17,40 +17,6 @@
 
   </script>
 
-  <script>
-
-    // Utility function to setup events when clicking on DOM elements.
-    function trackClickOnElement($link, category, action, label) {
-        $link.on('click', function() {
-            ga('send', 'event', category, action, label);
-            return true;
-        });
-    }
-
-    // Buttons that are going to trigger the Analytics event.
-    var $mainButton = $('#btn-primary'),
-        $secondaryButton = $('#btn-secondary');
-
-    // Strings for the event description.
-    var category = 'CTAs Landing Pages',
-        mainAction = 'Download CTA',
-        secondaryAction = 'Download Link',
-        mainLabel = mainAction,
-        secondaryLabel = secondaryAction;
-
-    // We call the utility function to setup the tracking.
-    trackClickOnElement($mainButton, 
-                        category, 
-                        mainAction, 
-                        mainLabel);
-
-    trackClickOnElement($secondaryButton, 
-                        category, 
-                        secondaryAction, 
-                        secondaryLabel);
-
-  </script>  
-
 </head>
 <body>
 
@@ -164,6 +130,40 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+
+    // Utility function to setup events when clicking on DOM elements.
+    function trackClickOnElement($link, category, action, label) {
+        $link.on('click', function() {
+            ga('send', 'event', category, action, label);
+            return true;
+        });
+    }
+
+    // Buttons that are going to trigger the Analytics event.
+    var $mainButton = $('#btn-primary'),
+        $secondaryButton = $('#btn-secondary');
+
+    // Strings for the event description.
+    var category = 'CTAs Landing Pages',
+        mainAction = 'Download CTA',
+        secondaryAction = 'Download Link',
+        mainLabel = mainAction,
+        secondaryLabel = secondaryAction;
+
+    // We call the utility function to setup the tracking.
+    trackClickOnElement($mainButton, 
+                        category, 
+                        mainAction, 
+                        mainLabel);
+
+    trackClickOnElement($secondaryButton, 
+                        category, 
+                        secondaryAction, 
+                        secondaryLabel);
+
+  </script>
 
 </body>
 </html> 
